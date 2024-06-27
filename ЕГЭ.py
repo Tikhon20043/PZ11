@@ -24,12 +24,5 @@ def find_max_sequence(file_path):
             current_length = 0
             x_count = 0
 
-    if current_length > max_length:
-        max_length = current_length
-
-    return max_length
-
-
-file_path = '313_24.txt'
-print(find_max_sequence(file_path))
+    return max(max_length, current_length)
 
