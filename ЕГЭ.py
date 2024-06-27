@@ -24,5 +24,11 @@ def find_max_sequence(file_path):
             current_length = 0
             x_count = 0
 
-    return max(max_length, current_length)
+    max_length = max(max_length, current_length)
+    print(f"Максимальная длина непрерывной подпоследовательности: {max_length}")
+    return max_length
+
+
+file_path = '313_24.txt'
+find_max_sequence(file_path)
 
